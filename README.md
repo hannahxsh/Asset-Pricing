@@ -1,1 +1,1 @@
-# Asset-Pricing
+# Course Structure
