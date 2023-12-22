@@ -27,7 +27,6 @@ def calc_alpha_beta_CAPM(market_df, industry_df):
 # market_model = pd.DataFrame(alpha_set,beta_set).reset_index()
 # market_model.index = Industry_name
 # market_model.columns = ["beta", "alpha"]
-# market_model.to_excel(r'C:\Users\shixi\Desktop\market_model.xlsx')
 
 ###Security Market Line
 
@@ -62,8 +61,8 @@ def SML(market_df, industry_df):
 
 
 #/100 mens %
-ten_industry = pd.read_excel(r"/Users/xiangsihan/Desktop/Exam_Industries.xlsx",header=0,index_col=0)/100
-market = pd.read_excel(r"/Users/xiangsihan/Desktop/Exam_Market.xlsx",header=0,index_col=0)/100
+ten_industry = pd.read_excel(r"Exam_Industries.xlsx",header=0,index_col=0)/100
+market = pd.read_excel(r"Exam_Market.xlsx",header=0,index_col=0)/100
 alpha, beta = calc_alpha_beta_CAPM(market, ten_industry)
 SML(market, ten_industry)
 
