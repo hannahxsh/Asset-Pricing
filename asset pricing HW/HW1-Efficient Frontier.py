@@ -41,7 +41,7 @@ def Mean_Variance_Frontier(r):
     print(w)
     return R_portfolio, R_portfolio2, Sigma_portfolio1, Sigma_portfolio2, R_tangency, Sigma_tangency, alpha, zeta, delta, Rmv
 
-r = pd.read_excel('/Users/xiangsihan/Desktop/Exam_Industries.xlsx',header=0,index_col=0)
+r = pd.read_excel('Exam_Industries.xlsx',header=0,index_col=0)
 R_p, R_p2, Sigma_p_nrl, Sigma_p_rl, R_t, Sigma_t, alpha, zeta, delta, Rmv = Mean_Variance_Frontier(r)
 
 R_efficient = R_p[R_p>=Rmv]
